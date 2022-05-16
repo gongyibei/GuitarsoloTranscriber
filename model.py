@@ -68,7 +68,7 @@ class GuitarFormer(pl.LightningModule):
     def __init__(
         self,
         d_feat=84,
-        n_frame=12,
+        n_frame=4,
     ):
         super(GuitarFormer, self).__init__()
         self.d_feat = d_feat
