@@ -4,11 +4,10 @@ transcribe guitar solo audio to midi-like tab.
 
 # Dataset
 
-The training dataset used is [GuitarSet](https://guitarset.weebly.com/).
+The training dataset used in this project is [GuitarSet](https://guitarset.weebly.com/).
 
 # Result
-
-test wav file.
+test with audio file, and generate the result figure.
 
 ```bash
 python3 ./test.py
@@ -23,5 +22,5 @@ python3 ./test.py
 run the transcriber in streaming mode
 
 ```bash
-parec --format=float32 --rate=44100 | python3 ./transcribe
+parec --channels=1 --format=float32 --rate=44100 | python3 ./transcribe
 ```
